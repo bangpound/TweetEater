@@ -11,7 +11,7 @@ CouchDB >= 0.10.0, couchapp, Ruby, Rubygems: tweetstream, couchrest
 <pre><code>cd TweetEater
 cat > .couchapprc
 {"env":{"default":{"db":"http://user:pass@localhost:5984/tweeteater"}}}
-^C</code></pre>
+^d</code></pre>
 
 *that last line means hit **CTRL-C***
 
