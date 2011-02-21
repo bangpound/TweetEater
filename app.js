@@ -2,9 +2,11 @@ var couchapp = require('couchapp')
   , path = require('path')
   
 var ddoc = {
-    _id : '_design/test'
+    _id : '_design/tweeteater'
   , views : {}                       
 }
+
+ddoc.couchapp = {name: "TweetEater"}
 
 ddoc.views.tweet_id = {
   map: function(doc) {
@@ -15,7 +17,7 @@ ddoc.views.tweet_id = {
 ddoc.evently = {
   tweets : {
     _init : {
-        mustache : "<ul><li>MOO</li></ul>"
+        mustache : "<ul></ul>"
       , selectors : {
         ul : {
           _changes : {
@@ -34,8 +36,6 @@ ddoc.evently = {
     }
   }
 }
-
-ddoc.couchapp = {name: "SXSW TWEETS"}
 
 module.exports = ddoc
 
