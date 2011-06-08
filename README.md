@@ -15,7 +15,7 @@ couchapp push app.js http://user:pass@localhost:5984/yourdb
 
 ## Run
 
-<pre><code>node _attachments/bin/tweeteater.rb twitterusername twitterpassword databasename terms,to,track</code></pre>
+<pre><code>node _attachments/bin/tweeteater.js twitterusername twitterpassword databasename terms,to,track</code></pre>
 
 Now view your app at
 
